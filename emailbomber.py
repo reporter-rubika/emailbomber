@@ -13,7 +13,7 @@ title = """
   ....                ,ONkc;,;cokOdc,.
  .                   OMo           :ddo.
                     dMc               :OO;
-                    0M.                 .:o.
+                    0M.     Hr-team      .:o.
                     ;Wd
                      ;XO,
                        ,d0Odlc;,..
