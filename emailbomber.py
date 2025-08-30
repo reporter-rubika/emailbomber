@@ -31,14 +31,14 @@ print(colored(title, 'white', attrs=['bold', 'underline']))
 print(colored("Kasra hacker", 'white', attrs=['bold', 'reverse']), end=' ')
 print(colored("Khalegh-robot", 'blue'))
 
-EMAIL_ADDRESS = input("what is your email address?")
-EMAIL_PASSWORD = input("Enter your APP PASSWORD please!")
-RECIPIENT_EMAIL = input("who is reciver?")
-SUBJECT_PREFIX = input("subject")
-BODY_MESSAGE = input("body:")
+EMAIL_ADDRESS = input("what is your email address?:  ")
+EMAIL_PASSWORD = input("Enter your APP PASSWORD please!:  ")
+RECIPIENT_EMAIL = input("who is reciver?:  ")
+SUBJECT_PREFIX = input("subject:  ")
+BODY_MESSAGE = input("body:  ")
 
 try:
-    NUM_EMAILS_TO_SEND = int(input("number of emails?: "))
+    NUM_EMAILS_TO_SEND = int(input("number of emails?:  "))
 except ValueError:
     print(colored("number is not corect", 'red'))
     exit()
@@ -65,11 +65,11 @@ def send_email(subject, body, to_email):
 print(colored(f"start{NUM_EMAILS_TO_SEND} email", 'green'))
 
 for i in range(1, NUM_EMAILS_TO_SEND + 1):
-    print(colored(f"Email send{i}...", 'green'))
+    print(colored(f"Email {i} send...", 'green'))
     subject = SUBJECT_PREFIX + str(i)
 
   
-    RECIPIENT_EMAIL_i = input(f"enter!): ")
+    RECIPIENT_EMAIL_i = input(f"Keep enter!): ")
     if RECIPIENT_EMAIL_i.strip() == "":
         to_email_final = RECIPIENT_EMAIL
     else:
